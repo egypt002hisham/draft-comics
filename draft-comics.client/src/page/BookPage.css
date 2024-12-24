@@ -1,0 +1,80 @@
+/* تنسيق الخط العنوان */
+.Welcomebooks h1 {
+  font-size: 36px; /* حجم الخط */
+  color: white; /* اللون الأساسي للعنوان */
+  font-family: 'Arial', sans-serif; /* أو يمكنك اختيار خط آخر */
+  font-weight: bold; /* جعل الخط عريض */
+  text-align: center; /* محاذاة العنوان في المنتصف */
+  letter-spacing: 2px; /* تباعد الأحرف */
+  margin-top: 20px; /* المسافة من العناصر السابقة */
+  margin-bottom: 20px; /* المسافة من العناصر اللاحقة */
+  text-transform: uppercase; /* تحويل النص إلى حروف كبيرة */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* إضافة ظل للنص */
+}
+/* تصميم الكتاب */
+.Welcomebooks {
+  text-align: center;
+  border-radius: 10px;
+}
+.bookico {
+  width: 250px; /* Adjust the size as needed */
+  height: auto;
+  margin-top: -50px;
+  margin-bottom: 40px; /* Add space below the image */
+  transition: transform 0.3s ease-in-out;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* توزيع الكتب */
+.bookList {
+  display: flex;
+  justify-content: center; /* جعل العناصر تكون في المنتصف */
+  flex-wrap: wrap;
+  gap: 20px; /* زيادة المسافة بين الكتب */
+}
+
+/* تصميم الكتاب */
+.bookItem {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden; /* إخفاء العناصر التي تتجاوز الحدود */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bookItem:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.DepartmentBooksAllSHOW {
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.9),
+    rgba(24, 134, 119, 0.8),
+    rgba(24, 108, 134, 0.808),
+    rgba(0, 0, 255, 0.397),
+    rgba(255, 255, 255, 0.9)
+  );
+  width: 100vw !important; /* عرض العنصر يغطي كامل العرض */
+}
+
+@media (max-width: 768px) {
+  .Welcomebooks h1 {
+    font-size: 28px; /* تقليل حجم الخط للشاشات الصغيرة */
+    letter-spacing: 1px; /* تقليل التباعد بين الأحرف */
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Welcomebooks h1 {
+    font-size: 20px; /* حجم أصغر للشاشات الصغيرة جدًا */
+    letter-spacing: 0.5px; /* تقليل التباعد أكثر */
+    margin-top: 0px;
+    margin-bottom: 20px; /* تقليل المسافة السفلية */
+  }
+}

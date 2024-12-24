@@ -1,0 +1,6 @@
+@draft_comics.Server_HostAddress = http://localhost:5064
+
+GET {{draft_comics.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

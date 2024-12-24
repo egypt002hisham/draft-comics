@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* تخصيص السلايدر */
+.slick-slide > div {
+    margin: 0 10px; /* يمكن استخدام Tailwind لعدم الحاجة إلى CSS مخصص */             /* استخدم flexbox لتوسيع السلايدر */
+}
+
+.PopularStories {
+  align-items: center; /* محاذاة العناصر في المنتصف */
+  color: #4A5568; /* لون النص */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* تأثير ظل للنص */
+  font-size: 2.5rem; /* حجم الخط */
+  text-transform: uppercase; /* تحويل النص إلى أحرف كبيرة */
+  letter-spacing: 2px; /* تباعد الأحرف */
+  text-align: center;
+  margin: 10px;
+  position: relative; /* لتحسين التركيب */
+  z-index: 10; /* فوق الـ SVG */
+
+}
+
+.slider-container {
+  position: relative; /* للحفاظ على العناصر فوق الـ SVG */
+}
+
+svg{
+  position: absolute;
+  top: 110px;
+  height: auto;
+  left: 0px;
+  right: 0px;
+  z-index: -1000;
+
+}
+

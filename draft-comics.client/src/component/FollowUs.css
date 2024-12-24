@@ -1,0 +1,66 @@
+.follow-us-container {
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  max-width: 1000px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.follow-us-container:hover {
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.follow-us-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 65%; /* تقليل عرض الصورة بنسبة 35% لتوفير مساحة أكبر للنص */
+}
+
+.social-image {
+  width: 400px; /* تقليل عرض الصورة */
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.social-image:hover {
+  transform: scale(1.05);
+}
+
+.sociall-text-two p {
+  flex: 1;
+  font-size: 1.3rem;
+  color: #333;
+  text-align: right;
+  direction: rtl;
+  line-height: 1.8;
+}
+
+.social-text p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .follow-us-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .follow-us-content {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%; /* التأكد من أن العناصر تملأ المساحة بشكل كامل */
+  }
+
+  .social-image {
+    width: 80%;
+  }
+}

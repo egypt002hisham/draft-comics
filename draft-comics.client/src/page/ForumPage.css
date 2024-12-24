@@ -1,0 +1,146 @@
+/* تحسين تصميم قسم العنوان */
+.StartSectionForum {
+  color: rgb(0, 0, 0);
+  background-color: #188677;
+  padding: 20px;
+  text-align: center;
+  --mask: radial-gradient(
+        29.08px at 50% calc(100% - 37.8px),
+        #000 99%,
+        #0000 101%
+      )
+      calc(50% - 54px) 0/108px 100%,
+    radial-gradient(29.08px at 50% calc(100% + 10.8px), #0000 99%, #000 101%)
+      50% calc(100% - 27px) / 108px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+.TitleSectionForum {
+  color: #ffffff !important;
+  font-size: 2.5em;
+  margin-top: -30px;
+}
+
+/* تحسين مساحة العنوان وشرح المنتدى */
+.ParacrifSectionForum {
+  display: inline-block;
+  color: #000;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  background-color: white;
+  font-size: 1.8em;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+/* تحسين تصميم العناصر في الشاشات الصغيرة */
+.ItemListForum {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.ItemForum {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px; /* تم تقليل العرض هنا ليتناسب مع الشاشات الصغيرة */
+  margin: 10px;
+}
+
+.BodyItemForum {
+  padding: 20px;
+  text-align: center;
+}
+
+.TitleItemForum {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.DescriptionItemForum {
+  font-size: 1em;
+  color: #555;
+}
+
+.IMGFORUMPEPAZ {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* تحسين التفاعل مع المستخدمين */
+.ActionWithUsers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+.LikeForumAction {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.LikeForumAction:hover {
+  background-color: #4500b5;
+}
+
+.NumberLikesFromUsers {
+  font-size: 1em;
+  color: #333;
+}
+
+/* تحسين التفاعل في الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .TitleSectionForum {
+    font-size: 2em; /* تقليل حجم الخط في العنوان */
+  }
+
+  .ParacrifSectionForum {
+    font-size: 1.4em; /* تقليل حجم الخط في النص */
+    margin-bottom: 20px; /* تقليل المسافة بين النص والعناصر الأخرى */
+  }
+
+  .ItemForum {
+    width: 100%; /* تغيير عرض العناصر إلى 100% لتناسب الشاشات الصغيرة */
+    margin: 10px 0; /* تحسين الهوامش */
+  }
+
+  .TitleItemForum {
+    font-size: 1.2em; /* تقليل حجم الخط في العناوين داخل العناصر */
+  }
+
+  .DescriptionItemForum {
+    font-size: 0.9em; /* تقليل حجم النص في الوصف */
+  }
+
+  .ActionWithUsers {
+    flex-direction: column; /* تغيير ترتيب العناصر في قسم التفاعل ليكون عمودي */
+    align-items: center;
+  }
+
+  .LikeForumAction {
+    width: 100%; /* تغيير حجم زر الإعجاب ليأخذ عرض العنصر كاملاً */
+    margin-bottom: 10px;
+  }
+
+  .NumberLikesFromUsers {
+    margin-top: 10px; /* إضافة مسافة بين الإعجاب وعدد الإعجابات */
+  }
+}

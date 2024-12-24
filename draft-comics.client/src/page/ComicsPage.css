@@ -1,0 +1,104 @@
+html,
+body {
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.comics {
+  padding: 20px;
+  margin-top: 130px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M1064.22 406.56 L1005.85 386.03000000000003L1061.0980810161748 370.2319189838252z' stroke='%23d3b714' stroke-width='2.42' stroke-dasharray='2%2c 2'%3e%3c/path%3e%3ccircle r='92.92279987487743' cx='1087.93' cy='491.26' stroke='%23d3b714' stroke-width='1' stroke-dasharray='3%2c 3'%3e%3c/circle%3e%3cpath d='M1363.27 459.28 L1275.57 554.4L1401.259982395786 588.6799823957858z' fill='%23e73635'%3e%3c/path%3e%3crect width='242' height='242' clip-path='url(%26quot%3b%23SvgjsClipPath1001%26quot%3b)' x='1299.58' y='123.13' fill='url(%26quot%3b%23SvgjsPattern1002%26quot%3b)' transform='rotate(233.11%2c 1420.58%2c 244.13)'%3e%3c/rect%3e%3crect width='144.72' height='144.72' clip-path='url(%26quot%3b%23SvgjsClipPath1003%26quot%3b)' x='636.92' y='479.14' fill='url(%26quot%3b%23SvgjsPattern1004%26quot%3b)' transform='rotate(47.26%2c 709.28%2c 551.5)'%3e%3c/rect%3e%3crect width='180' height='180' clip-path='url(%26quot%3b%23SvgjsClipPath1005%26quot%3b)' x='127.94' y='57.96' fill='url(%26quot%3b%23SvgjsPattern1006%26quot%3b)' transform='rotate(207.16%2c 217.94%2c 147.96)'%3e%3c/rect%3e%3crect width='216' height='216' clip-path='url(%26quot%3b%23SvgjsClipPath1007%26quot%3b)' x='746.58' y='306.64' fill='url(%26quot%3b%23SvgjsPattern1008%26quot%3b)' transform='rotate(60.22%2c 854.58%2c 414.64)'%3e%3c/rect%3e%3cpath d='M68.98 478.32a5.6 5.6 0 1 0-4.66 10.18 5.6 5.6 0 1 0 4.66-10.18zM62.32 492.87a5.6 5.6 0 1 0-4.67 10.18 5.6 5.6 0 1 0 4.67-10.18zM55.66 507.41a5.6 5.6 0 1 0-4.67 10.19 5.6 5.6 0 1 0 4.67-10.19zM49 521.96a5.6 5.6 0 1 0-4.67 10.19 5.6 5.6 0 1 0 4.67-10.19z' stroke='%23e73635' stroke-width='1'%3e%3c/path%3e%3ccircle r='46.666666666666664' cx='248.75' cy='312.33' fill='%23d3b714'%3e%3c/circle%3e%3cpath d='M64.15 475.97a5.6 5.6 0 1 0 5.13-9.95 5.6 5.6 0 1 0-5.13 9.95zM71.48 461.75a5.6 5.6 0 1 0 5.13-9.95 5.6 5.6 0 1 0-5.13 9.95zM78.81 447.53a5.6 5.6 0 1 0 5.13-9.96 5.6 5.6 0 1 0-5.13 9.96zM86.14 433.31a5.6 5.6 0 1 0 5.13-9.96 5.6 5.6 0 1 0-5.13 9.96zM63.72 511.75a5.6 5.6 0 1 0 5.13-9.96 5.6 5.6 0 1 0-5.13 9.96zM71.05 497.53a5.6 5.6 0 1 0 5.13-9.96 5.6 5.6 0 1 0-5.13 9.96zM78.37 483.3a5.6 5.6 0 1 0 5.13-9.95 5.6 5.6 0 1 0-5.13 9.95zM85.7 469.08a5.6 5.6 0 1 0 5.13-9.96 5.6 5.6 0 1 0-5.13 9.96z' stroke='%23e73635' stroke-width='2.73' stroke-dasharray='4%2c 4'%3e%3c/path%3e%3cpath d='M1089.35 268.28 L1024.43 296.78L1089.7177693024723 315.35776930247243z' stroke='rgba(30%2c 44%2c 205%2c 1)' stroke-width='1'%3e%3c/path%3e%3cpath d='M894.59 173.57L891.6 161.12 903.1 155.47 900.11 143.02 911.6 137.37 908.61 124.92 920.11 119.27M901.83 176.97L898.84 164.52 910.34 158.87 907.35 146.42 918.84 140.77 915.85 128.32 927.35 122.67' stroke='%23e73635' stroke-width='1' stroke-dasharray='2%2c 2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cpattern x='0' y='0' width='11' height='11' patternUnits='userSpaceOnUse' id='SvgjsPattern1002'%3e%3cpath d='M0 11L5.5 0L11 11' stroke='%23e73635' fill='none'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1001'%3e%3ccircle r='60.5' cx='1420.58' cy='244.13'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='12.06' height='12.06' patternUnits='userSpaceOnUse' id='SvgjsPattern1004'%3e%3cpath d='M6.03 1L6.03 11.06M1 6.03L11.06 6.03' stroke='rgba(3%2c 123%2c 11%2c 1)' fill='none' stroke-width='1.47'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1003'%3e%3ccircle r='36.18' cx='709.28' cy='551.5'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern1006'%3e%3cpath d='M0 6L3 0L6 6' stroke='%23e73635' fill='none'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1005'%3e%3ccircle r='45' cx='217.94' cy='147.96'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern1008'%3e%3cpath d='M3 1L3 5M1 3L5 3' stroke='rgba(3%2c 123%2c 11%2c 1)' fill='none' stroke-width='1.38'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1007'%3e%3ccircle r='54' cx='854.58' cy='414.64'%3e%3c/circle%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.TitleDepartmentComics {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.DepartComicsMain {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.DepartComicsCartoonia,
+.DepartComicsTranslatedComics {
+  width: 100%;
+  min-height: 200px;
+  background-color: transparent;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border-left: 5px solid #3498db;
+}
+
+.DepartComicsCartoonia h3,
+.DepartComicsTranslatedComics h3 {
+  font-size: 1.6rem;
+  color: #333;
+}
+
+/* Media Queries for small screens */
+@media (max-width: 768px) {
+  .TitleDepartmentComics {
+    font-size: 1.5rem; /* تقليل حجم الخط في الشاشات الصغيرة */
+  }
+
+  .DepartComicsMain {
+    padding: 5px; /* تقليل المسافة الداخلية */
+  }
+
+  .DepartComicsCartoonia,
+  .DepartComicsTranslatedComics {
+    padding: 10px; /* تقليل الحشوة في الأقسام */
+    margin-bottom: 10px; /* تقليل المسافة بين الأقسام */
+  }
+
+  .DepartComicsCartoonia h3,
+  .DepartComicsTranslatedComics h3 {
+    font-size: 1.4rem; /* تقليل حجم النص للأقسام */
+  }
+
+  .comics {
+    margin-top: 80px; /* تقليل المسافة العلوية في الشاشات الصغيرة */
+  }
+}
+
+/* Media Queries for extra small screens */
+@media (max-width: 480px) {
+  .TitleDepartmentComics {
+    font-size: 1.2rem; /* تقليل حجم الخط أكثر للشاشات الصغيرة جدًا */
+  }
+
+  .DepartComicsMain {
+    padding: 5px; /* تقليل المسافة الداخلية أكثر */
+  }
+
+  .DepartComicsCartoonia,
+  .DepartComicsTranslatedComics {
+    padding: 8px; /* تقليل الحشوة للأقسام */
+    margin-bottom: 8px; /* تقليل المسافة بين الأقسام */
+  }
+
+  .DepartComicsCartoonia h3,
+  .DepartComicsTranslatedComics h3 {
+    font-size: 1.2rem; /* تقليل حجم النص أكثر */
+  }
+
+  .comics {
+    margin-top: 50px; /* تقليل المسافة العلوية أكثر */
+  }
+}

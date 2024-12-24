@@ -1,0 +1,115 @@
+.Row {
+  display: flex;
+  flex-wrap: wrap; /* يسمح للعناصر بالتوزيع في أسطر */
+  justify-content: space-around;
+  background-image: url('../static/img/erik-mclean-27kCu7bXGEI-unsplash.jpg');
+  background-size: cover; /* ملء الخلفية مع الحفاظ على النسب */
+  background-position: center;
+  width: 100vw;
+  min-height: 100vh; /* ضمان أن الحاوية تغطي الشاشة بالكامل */
+  overflow: hidden;
+  box-sizing: border-box; /* يجعل الحواف وال padding محسوبة مع الحجم الكلي */
+  animation: backgroundShift 10s infinite linear;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 1; /* تأكد أن الخلفية خلف العناصر */
+  gap: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+  position: relative;
+  z-index: 2; /* العناصر فوق الخلفية */
+  margin: 20px; /* لتجنب الالتصاق بباقي العناصر */
+}
+
+.item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.item h1 {
+  color: #020912 !important;
+}
+
+.item p {
+  font-size: 1rem;
+  color: #333;
+  max-width: 600px;
+  letter-spacing: 0.7px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  border-left: 4px solid #1a73e8;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards, textShadowGlow 2s infinite ease-in-out;
+}
+
+.item p a {
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.item p a:hover {
+  color: #005bb5;
+  background-color: rgba(0, 115, 230, 0.2);
+  text-decoration: underline;
+}
+
+/* الحركات */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes textShadowGlow {
+  0%,
+  100% {
+    text-shadow: 0 0 5px #1a73e8, 0 0 10px #1a73e8, 0 0 15px #1a73e8;
+  }
+  50% {
+    text-shadow: 0 0 15px #1a73e8, 0 0 25px #1a73e8, 0 0 35px #1a73e8;
+  }
+}
+
+@keyframes backgroundShift {
+  0% {
+    background-position: center center;
+  }
+  50% {
+    background-position: left top;
+  }
+  100% {
+    background-position: center center;
+  }
+}
+
+@media (max-width: 739px) {
+  .Row {
+    top: 150px;
+  }
+  .item {
+    width: 200px;
+    height: 200px;
+  }
+}

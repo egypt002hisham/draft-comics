@@ -1,0 +1,94 @@
+/* الحاوية الرئيسية */
+.departments-container {
+  padding: 20px;
+  background-color: #f5f5f5;
+  font-family: 'Arial', sans-serif;
+  direction: rtl;
+}
+
+/* عنوان القسم */
+.department-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #c0392b;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* الأقسام الفرعية */
+.sub-department {
+  margin-bottom: 30px;
+}
+
+/* عنوان القسم الفرعي */
+.sub-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+/* وصف القسم الفرعي */
+.sub-description {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+/* معرض الصور */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+.gallery-image {
+  width: calc(33.33% - 10px); /* عرض الصورة 33% من المساحة */
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* تخصيص التصميم للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .department-title {
+    font-size: 20px; /* تقليل حجم الخط */
+    text-align: center; /* محاذاة العنوان للوسط */
+  }
+
+  .sub-title {
+    font-size: 18px; /* تقليل حجم الخط */
+  }
+
+  .sub-description {
+    font-size: 14px; /* تقليل حجم الخط */
+  }
+
+  .image-gallery {
+    justify-content: center; /* محاذاة الصور للوسط */
+  }
+
+  .gallery-image {
+    width: calc(50% - 10px); /* تقليل عرض الصور إلى 50% */
+  }
+
+  /* ضبط عرض الصورة ليكون مناسبًا على الشاشات الصغيرة جدًا */
+  @media (max-width: 480px) {
+    .gallery-image {
+      width: 100%; /* عرض الصورة 100% لتغطية العرض */
+    }
+  }
+}

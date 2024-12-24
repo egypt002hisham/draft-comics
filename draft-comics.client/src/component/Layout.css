@@ -1,0 +1,441 @@
+/* reset margin and padding */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Oswald:wght@200..700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Make any section centered and take the full size of the page */
+section {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  display: flex; /* استخدام flexbox لتوزيع العناصر */
+  align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
+}
+.NAME {
+  font-family: 'Oswald', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300; /* استخدم قيمة الوزن الصحيحة */
+  font-style: normal;
+  font-size: xx-large;
+  color: #333; /* لون النص */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* تأثير ظل للنص */
+  transition: transform 0.3s ease, color 0.3s ease; /* تأثير الانتقال */
+}
+
+.NAME:hover {
+  transform: scale(1.1); /* زيادة حجم النص عند التمرير */
+  color: #007bff; /* تغيير لون النص عند التمرير */
+}
+
+.logo {
+  margin-right: 10px; /* إضافة مسافة بين الصورة والنص */
+  height: 100px; /* يمكنك ضبط الارتفاع حسب الحاجة */
+  width: auto; /* الحفاظ على نسبة العرض إلى الارتفاع للصورة */
+}
+
+/* إزالة الهوامش الافتراضية من html و body */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* تنسيق الـ header */
+header {
+  background-color: #188677;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  color: white;
+  width: 100%;
+  position: relative;
+}
+#Comics {
+  margin-top: 6px;
+}
+.ico {
+  position: relative;
+  height: 60px; /* تعديل الحجم لتناسب الأيقونات */
+  width: 60px; /* تعديل الحجم لتناسب الأيقونات */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* تأثير عند التحويم */
+  margin: 0 10px; /* إضافة مسافة بين الأيقونات */
+}
+
+.ico:hover {
+  transform: scale(1.2); /* تكبير الأيقونة قليلاً عند التحويم */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* إضافة ظل ناعم عند التحويم */
+}
+/* تنسيق عنوان الموقع */
+header .title h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav {
+  margin-right: 30px;
+}
+
+.ico:hover {
+  transform: scale(1.1); /* تكبير الأيقونة عند التحويم */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* إضافة ظل عند التحويم */
+}
+
+.ico:hover + .content {
+  opacity: 1;
+  box-shadow: 0px 4px 8px rgba(255, 0, 0, 0.2); /* تأثير الظل */
+}
+
+/* تنسيق القائمة الملاحية */
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #ffffff; /* اللون الذهبي عند التمرير */
+}
+.imge {
+  position: relative; /* الحاوية تصبح مرجعاً لموضع العناصر المطلقة بداخلها */
+  display: inline-block; /* لاحتواء الأيقونة والمحتوى */
+}
+
+.imge .ico {
+  object-fit: contain; /* التأكد من أن الصورة لا تشوه */
+}
+.logo {
+  max-height: 100px; /* ارتفاع اللوجو */
+  transition: transform 0.3s; /* تأثير تكبير عند التحريك */
+}
+
+.logo:hover {
+  transform: scale(1.05); /* تكبير اللوجو عند التحويم */
+}
+.content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
+}
+.content:hover {
+  opacity: 1;
+}
+
+/* القائمة الجانبية */
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #188677;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+.side-nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav a:hover {
+  color: blue;
+}
+
+.side-nav .close-btn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+li {
+  position: relative; /* لجعل القائمة المنسدلة تتداخل مع العنصر */
+}
+
+.dropdown {
+  display: none; /* إخفاء القائمة المنسدلة بشكل افتراضي */
+  position: absolute; /* لجعلها تظهر فوق العناصر الأخرى */
+  background-color: #444; /* لون الخلفية للقائمة المنسدلة */
+  min-width: 160px; /* عرض الحد الأدنى للقائمة */
+  border-radius: 8px; /* إضافة زوايا مستديرة */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* إضافة ظل */
+  z-index: 10000; /* جعل القائمة فوق العناصر الأخرى */
+  opacity: 0; /* بدء opacity من 0 */
+  transform: translateY(-10px) scale(0.95); /* بدء القائمة مرفوعة قليلاً ومصغرة */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* تأثيرات الانتقال */
+}
+.side-nav {
+  z-index: 1000; /* تأكد من أن الـ z-index أعلى من باقي العناصر */
+}
+
+.side-nav.open {
+  width: 250px; /* تأكد من تحديد العرض عند فتح القائمة */
+}
+
+li:hover .dropdown {
+  display: block; /* عرض القائمة عند التمرير فوق العنصر */
+  opacity: 1; /* جعل opacity 1 عند ظهور القائمة */
+  transform: translateY(0) scale(1); /* نقل القائمة إلى وضعها الطبيعي وكبرها */
+}
+
+.dropdown .arrow {
+  position: absolute; /* موقعها بالنسبة للقائمة المنسدلة */
+  top: -10px; /* وضع الزاوية في الجزء العلوي */
+  left: 20px; /* محاذاة الزاوية */
+  width: 0; /* عرض 0 لصنع مثلث */
+  height: 0; /* ارتفاع 0 لصنع مثلث */
+  border-left: 10px solid transparent; /* زوايا شفافة */
+  border-right: 10px solid transparent; /* زوايا شفافة */
+  border-bottom: 10px solid #444; /* لون الزاوية */
+}
+
+.dropdown li {
+  display: block; /* جعل العناصر في القائمة المنسدلة في سطر واحد */
+}
+
+.dropdown li a {
+  padding: 10px 15px; /* هوامش داخلية */
+  color: white; /* لون النص */
+  text-decoration: none; /* إزالة التسطير */
+  display: block; /* جعل الروابط تشغل المساحة بالكامل */
+  transition: background-color 0.3s ease; /* تأثير عند تغيير لون الخلفية */
+}
+
+.dropdown li a:hover {
+  background-color: #555; /* تغيير لون الخلفية عند التمرير */
+  border-radius: 8px; /* زوايا مستديرة للعناصر عند التمرير */
+}
+
+/* إضافة تأثيرات على الرابط العنصر */
+.dropdown li a {
+  transition: background-color 0.3s ease; /* تأثير عند تغيير لون الخلفية */
+}
+
+/* إضافة تأثيرات عند ظهور القائمة */
+.dropdown {
+  transition: all 0.3s ease; /* تأثير شامل عند الظهور */
+}
+
+.popular-stories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* لتوسيط محتوياتها */
+  align-items: center; /* محاذاة العناصر عمودياً في المنتصف */
+  margin-top: 20px;
+}
+
+h1 {
+  flex: 1; /* خذ المساحة المتبقية */
+  text-align: left; /* محاذاة العنوان إلى اليسار */
+  color: black; /* لون العنوان أسود */
+}
+
+.slideshow-container {
+  display: flex; /* استخدام Flexbox */
+  justify-content: center; /* توسيط المحتوى داخل السلايدر */
+  max-width: 80%; /* تعيين عرض أقصى للصندوق */
+  overflow: hidden; /* إخفاء العناصر الزائدة */
+  margin: 0 auto; /* توسيط العنصر */
+}
+
+.mySlides {
+  display: flex; /* استخدام Flexbox داخل الشرائح */
+  flex-direction: column; /* محاذاة العناصر عمودياً */
+  align-items: center; /* توسيط العناصر داخل الشرائح */
+}
+
+.mySlides img {
+  width: 100%; /* عرض الصورة 100% من عرض الحاوية */
+  height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+  max-height: 400px; /* تعيين أقصى ارتفاع للصورة */
+}
+
+section {
+  text-align: center;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute; /* تأكد من أنها مطلقة بالنسبة لـ .slideshow-container */
+  top: 50%; /* وسط الشاشة عمودياً */
+  width: auto;
+  padding: 16px;
+  color: white; /* لون النصوص في الأزرار أبيض */
+  background-color: black; /* خلفية الأزرار سوداء */
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* تدرج في اللون عند التحويم */
+}
+
+.comics {
+  padding: 20px;
+  background-color: #f4f4f4;
+  margin-top: 130px;
+}
+
+.comics_title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.comics_grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.comics_grid a {
+  display: block;
+  text-decoration: none;
+}
+
+.comics_grid img {
+  width: 150px;
+  height: 225px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.comics_grid img:hover {
+  transform: scale(1.15);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .comics_grid img {
+    width: 120px;
+    height: 180px;
+  }
+}
+
+/* إظهار القائمة الجانبية فقط للشاشات الصغيرة */
+@media (max-width: 644px) {
+  .nav {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+}
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.search-icon {
+  cursor: pointer;
+  width: 24px; /* حجم الأيقونة */
+  height: 24px; /* حجم الأيقونة */
+  transition: transform 0.3s ease; /* تأثير الحركة */
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  position: absolute;
+  top: 0; /* اضبط موقع الإدخال حسب الحاجة */
+  left: 30px; /* مساحة لتظهر أيقونة البحث */
+  opacity: 0; /* بدءًا بشفافية صفراء */
+  visibility: hidden; /* البداية غير مرئية */
+  transform: translateY(-10px); /* بدءًا من الأعلى */
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease; /* تأثير الحركة */
+}
+
+.search-input.show {
+  opacity: 1; /* يصبح مرئيًا عند الإظهار */
+  visibility: visible; /* يصبح مرئيًا عند الإظهار */
+  transform: translateY(0); /* يعود إلى موضعه الطبيعي */
+  animation: slideDown 0.3s ease forwards; /* تطبيق الأنيميشن */
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.search-icon:hover {
+  transform: scale(1.1); /* زيادة الحجم عند التمرير */
+}
+/* إخفاء شريط البحث العادي عندما تكون الشاشة صغيرة */
+@media (max-width: 644px) {
+  .normal-search {
+    display: none;
+  }
+  .nav-search {
+    display: block;
+  }
+}
